@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .input-account {
+      border-radius: 10px;
+      outline: 2px solid #00a6fb;
+      border: 0;
+      background-color: #ffd6fc;
+      outline-offset: 2px;
+      padding: 10px 12.5px;
+      transition: all 0.2s ease;
+      width: 250px;
+    }
+
+    .input-account:hover {
+      background-color: #fff;
+    }
+
+    .input-account:focus {
+      outline-offset: -3px;
+      background-color: #d6f1ff;
+    }
+
+    .input-account.red-outline {
+      outline: red solid 2px;
+      color: red;
+    }
+
+    .form-account {
+      width: 400px;
+      background-color: #00a6fb;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      row-gap: 20px;
+      padding: 30px;
+      margin: 20px auto;
+      border-radius: 15px;
+    }
+
+    .form-account h3 {
+      line-height: 20px;
+      font-size: 25px;
+    }
+
+    .form-account .logo-form {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+    }
+
+    #login,
+    #register {
+      font: inherit;
+      background-color: #f0f0f0;
+      border: 0;
+      color: #242424;
+      border-radius: 0.5em;
+      font-size: 1.35rem;
+      padding: 0.375em 1em;
+      font-weight: 600;
+      text-shadow: 0 0.0625em 0 #fff;
+      box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+        0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+        0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+      transition: 0.15s ease;
+      cursor: pointer;
+    }
+
+    #login,
+    #register {
+      :active {
+        translate: 0 0.225em;
+        box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+          0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+          0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca,
+          0 0.225em 0.375em 0 #cecece;
+      }
+    }
+  </style>
+  <body>
+    <form action="" id="login-form" class="form-account">
+      <img src="./Programer 18-12.png" alt="" class="logo-form" />
+      <h3>Đăng nhập</h3>
+      <div class="input-group">
+        <input
+          type="email"
+          name="email"
+          id="email-login"
+          class="input-account"
+          placeholder="Email"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          name="password"
+          id="password-login"
+          class="input-account"
+          placeholder="Mật khẩu"
+        />
+      </div>
+      <div class="input-group">
+        <button type="submit" id="login">Đăng nhập</button>
+        <button>Tạo tài khoản</button>
+      </div>
+    </form>
+
+    <form action="" id="register-form" class="form-account">
+      <img src="./Programer 18-12.png" alt="" class="logo-form" />
+      <h3>Đăng ký</h3>
+      <div class="input-group">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          class="input-account"
+          placeholder="Họ và tên"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-account"
+          placeholder="Email"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="input-account"
+          placeholder="Mật khẩu"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          name="confirm_password"
+          id="confirm_password"
+          class="input-account"
+          placeholder="Xác nhận mật khẩu"
+        />
+      </div>
+      <div class="input-group">
+        <button type="submit" id="register">Đăng ký</button>
+        <button>Đăng nhập</button>
+      </div>
+    </form>
+    <button id="logoutBtn">Logout</button>
+
+    <script src="auth.js"></script>
+  </body>
+</html>

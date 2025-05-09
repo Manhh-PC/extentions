@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "0303",
+      "name": "Mạnh Nguyễn Đức",
+      "email": "bluestacks2k6@gmail.com",
+      "password": "1",
+      "cart": [],
+      "role": "user"
+    },
+    {
+      "id": "0304",
+      "name": "Nguyễn Thị Hồng",
+      "email": "nguyenhihong@gmail.com",
+      "password": "1",
+      "cart": [],
+      "role": "user"
+    }
+  ],
+  "currentUser": {
+    "id": 1,
+    "name": "Mạnh Nguyễn Đức",
+    "email": "bluestacks2k6@gmail.com",
+    "role": "user"
+  }
+}
